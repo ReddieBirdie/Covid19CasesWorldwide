@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 
 import plotly.express as px
 from click import confirm
 
 
 def load_data():
-    data = pd.read_csv("/Users/redsparrow/Downloads/covid19.csv")
+    data = pd.read_csv("covid19.csv")
     return data
 
 def processedData(data):
